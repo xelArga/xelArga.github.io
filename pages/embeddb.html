@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmbedDB and Thesis</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-sans">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="pb-10">
+      <h1 class="text-4xl text-center my-8">EmbedDB and Thesis</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg font-[Helvetica]"
+      >
+        <p>
+          I had the great pleasure to do a graduating thesis under the supervision of Dr. Ramon Lawrence. The thesis was focused on adding improvements to 
+          EmbedDB, a lightweight database system designed to be run on low performance hardware. EmbedDB is designed to run with only 4 kilobytes of memory 
+          and doesn't need and operating system, which allows it to run on devices that have very little memory. I was tasked with fixing
+          the Order By functionality and various other tests and project issues from previous development by other students. 
+        </p>
+        <p>
+          You can view the  <a class ="underline text-blue-500" href = https://github.com/ubco-db/EmbedDB>Github repository here</a>.
+        </p>
+        <p>The fixes were largely focused on memory management problems during the sorting methods, with some final results comparing performance
+          to SQLite on different hardware. The completion of Order By allows for data analysis on low-performance devices like Arduinos that lack
+          an operating system by connecting the existing Group By functionality.
+        </p>
+        <p>
+          This work provided an immense opportunity to grow my understanding of low-level systems and memory management in C, and getting
+          the chance to work with PlatformIO on different embedded devices, mainly the Arduino Due. The challenges of cross-platform development
+          was a fantastic experience for my skills.
+        </p>
+        <p>
+          My thesis can be viewed here at the <a class = "underline text-blue-500" href = "https://open.library.ubc.ca/soa/cIRcle/collections/undergraduateresearch/52966/items/1.0452106">
+            UBC Library</a>.
+        </p>
+        <p>Below is a photo from the undergraduate thesis presentation on April 24th, 2026.</p>
+        <div class="flex justify-center"><img src="/images/thesis.jpeg" alt=""></div>
+      </div>
+    </main>
+  </body>
+</html>

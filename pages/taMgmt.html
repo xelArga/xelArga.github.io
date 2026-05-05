@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TA Management System</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-sans">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="pb-10">
+      <h1 class="text-4xl text-center my-8">TA Management System</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg font-[Helvetica]"
+      >
+        <p>
+          Our capstone course had us create a TA management system that was to replace
+          the current system of TA Management used by UBCO. The client (the professor at UBCO doing the allocations)
+          was providing feedback and selected our project as the most suitable to start being prepared
+          for use. I had the opportunity to continue this work over 2 independent studies,
+          and have made significant improvements to the project in aiding its preparation for 
+          production use.
+        </p>
+        <p>
+          The project uses
+          <a class="underline text-blue-500" href="https://spring.io/projects/spring-boot"
+            >SpringBoot</a
+          >
+          for the backend RESTful API, which is Java based, and 
+          <a class="underline text-blue-500" href="https://vite.dev/">Vite</a>
+          with <a class="underline text-blue-500" href="https://react.dev/">React</a> on the frontend. A large amount of work went into refactoring
+          from microservices, which we implemented in the capstone, back to a modular 
+          monolithic application for easier maintenance. This led to major changes in the 
+          documentation, database, tests, and overall backend implementation. I then focused
+          on new features focused on easier application processes and assignment of TAships.
+        </p>
+        <p></p>
+        <p>Below shows an example workflow of our system.</p>
+        <p>
+          First, a student can create an application for a given semester that is active, specifying information
+          like how many hours they would be willing to work and their course department preferences. 
+        </p>
+        <img src="/images/ta1.png" alt="ta1" />
+        <img src="/images/ta2.png" alt="ta2" />
+        <img src="/images/ta3.png" alt="ta3" />
+        <img src="/images/ta4.png" alt="ta4" />
+        <p>
+          Now, the coordinator can view all the courses and applications for a semester, with their relevant
+          time slots to try and allocate students based on their current hours allocated and availability.
+        </p>
+        <img src="/images/ta5.png" alt="ta5" />
+        <img src="/images/ta6.png" alt="ta6" />
+        <img src="/images/ta7.png" alt="ta7" />
+        <p>
+          Once the offer is sent, the student can view the work assignment details and either accept or decline.
+        </p>
+        <img src="/images/ta8.png" alt="ta8" />
+      <p>
+        If the student accepts or declines, this updates in the coordinators view.
+      </p>
+        <img src="/images/ta9.png" alt="ta9" />
+        <img src="/images/ta10.png" alt="ta10" />
+      </div>
+    </main>
+  </body>
+</html>

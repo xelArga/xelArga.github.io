@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechLineages</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-sans">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="pb-10">
+      <h1 class="text-4xl text-center my-8">TechLineages Project</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg font-[Helvetica]"
+      >
+        <p>
+          Between the years of my 2nd and 3rd year, I had the opportunity to work under the supervision of Dr. Liane Gabora at UBC on her research
+          about cultural lineages through inventions. She wanted a visual system to view how patents are related, with information relating to
+          the inventors to give insight into potential inspirations that led to unique inventions. 
+        </p>
+        <p>The stack used a Python backend, d3 for frontend visualization, with a PostgreSQL relation database.</p>
+        <p>The visualization would scrape the Google patent API for the relevant information on the patent and store it in the database.
+          This information would include related patents through citations, which can then be expanded when clicked on the patent. The next patents
+          are either retrieved from the database if they exist or scraped for new information, and displayed as a web over the years displaying the relevant
+          patent information. This was the beginning of a tool that could further be used to track new patents and learn about their inventors, as well
+          as include AI to help filter more possible inspirations for innovations.
+        </p>
+        <img src="/images/tech1.png" alt="">
+        <img src="/images/tech2.png" alt="">
+        <img src="/images/tech3.png" alt="">
+        <img src="/images/tech4.png" alt="">
+      </div>
+    </main>
+  </body>
+</html>

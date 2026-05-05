@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JamPal</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <body class="bg-black text-white font-[Roboto]">
+    <nav class="flex h-[3rem] border-b border-slate-700 items-center sticky">
+      <ul class="flex gap-x-4 ml-auto pr-10 text-2xl items-center">
+        <li><a href="/" class="hover:text-slate-400">Home</a></li>
+        <li><a href="/#projects" class="hover:text-slate-400">Projects</a></li>
+      </ul>
+    </nav>
+
+    <main class="pb-10">
+      <h1 class="text-4xl text-center my-8">JamPal</h1>
+      <div
+        class="w-3/4 border border-1 border-neutral-700 rounded-xl bg-neutral-900 m-auto space-y-4 p-6 shadow-xl text-lg font-[Helvetica]"
+      >
+      <p>JamPal has been a fun side project that I've been working on with my brother. The mobile app is designed to be a tool for musicians 
+        of any style to find common songs to play together. 
+        It is written in <a class="underline text-blue-400" href="https://flutter.dev/">Flutter</a>, a google-based framework for cross-platform applications (android, apple, web), and we have an <a class="underline text-blue-400" href="https://expressjs.com/">Express.js</a> back-end service for user authentication and song management. It is mostly a local application, using an sqlite3 database for song storage.</p>
+      <iframe src="https://www.youtube.com/embed/AQ2DJmkgTlQ" class="w-full h-200"></iframe>
+      </div>
+    </main>
+  </body>
+</html>
